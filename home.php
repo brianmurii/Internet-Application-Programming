@@ -13,15 +13,22 @@ $pdo=$con->connect();
 <html>
 <head>
 	<title>Home Page</title>
+	<link rel="stylesheet" href="home.css">
 </head>
 <body>
+	<header>
+		<ul class="menu">
+				<li><a href="loginlab.php">Login</a></li>
+				<li><a href="changepassword.php">Change Password</a></li>
+				
+			</ul>
+	</header>
 	<div class="header">
 		<h1 class="Title">Welcome</h1>
 		<?php
 		if (isset($_SESSION['email'])) {
 			?>
-			<a href='loginlab.php' id="Login">Login</a>
-			<a href='changepassword.php' id="Login">Change Password</a>
+			
 			
 			<?php
 		}

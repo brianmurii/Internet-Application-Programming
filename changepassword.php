@@ -30,13 +30,26 @@ if (isset($_SESSION['email'])) {
 		<link rel="stylesheet" type="text/css" href="changepassword.css">
 	</head>
 	<body>
+		<header>
+		<ul class="menu">
+				<li><a href="home.php">Home</a></li>
+				
+			</ul>
+	</header>
 		<form method="Post" action="insert.php" class="changepassform">
-			<h2 id="header">Change Password</h2>
+			<div class="changep">
+			<h1 id="header">Change Password</h1>
+			<div class="textbox">
 			<input type="password" name="passwordnew" id="passwordnew" placeholder="Enter New Password"><br><br>
+			</div>
+
+			<div class="textbox">
 
 			<input type="password" name="passwordnewc" id="passwordnewc" placeholder="Confirm New Password"><br><br>
+			</div>
 
-			<input type="Submit" name="passwordchange" value="Change" id="change">
+			<input class="btn" type="Submit" name="passwordchange" value="Change" id="change">
+			</div>
 			
 		</form>
 	
